@@ -212,4 +212,23 @@ background-position: center;
     line-height: 2.3rem;
     color: #1A9AF7;
 }
-
+.currency-table__date, .comisiones-table__date{
+    width:190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding:8px;
+    border-radius: 8px;
+}
+.currency-table__date{
+    background-color: var(--soft-orange);
+}
+.comisiones-table__date{
+    background: #E7F5FF;
+}
+.currency-table__date p, .comisiones-table__date p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--black);
+    font-weight: 300;
+}
