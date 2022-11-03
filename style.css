@@ -170,3 +170,46 @@ main{
     background-color: var(--just-white);
     color:var(--grey);
 }
+.currency-table__container .table__top-left{
+    border-radius: 15px 0 0 0;
+}
+.currency-table__container .table__top-right{
+    border-radius: 0 15px 0 0;
+}
+.currency-table__container .table__bottom-left{
+    border-radius: 0 0 0 15px;
+}
+.currency-table__container .table__bottom-right{
+    border-radius: 0 0 15px 0;
+}
+.currency-table__container .table-right{
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color:#757575;
+}
+.currency-table__container .up, .down{
+display: inline-block;
+width: 15px;
+height: 15px;
+margin-left: 10px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.currency-table__container .up{
+    background-image: url("./assets/icons/trending-up1.svg");
+}
+.currency-table__container .down{
+    background-image: url("./assets/icons/trending-down1.svg");
+}
+
+
+.main-currency-table .comisiones-table__title{
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #1A9AF7;
+}
+
