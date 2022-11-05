@@ -24,6 +24,7 @@ html{
     --grey:#BABABA;
     --off-white:#FAF8F7;
     --just-white:#FFFFFF;
+    --another-gray:#757575;
 }
 header{
     position:relative;
@@ -134,7 +135,7 @@ main{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.6rem;
-    color:#757575;
+    color:var(--another-gray);
 }
 .main-currency-table{
     width:70%;
@@ -186,7 +187,7 @@ main{
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color:#757575;
+    color:var(--another-gray);
 }
 .currency-table__container .up, .down{
 display: inline-block;
@@ -358,17 +359,121 @@ background-position: center;
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    color: #757575;
+    color: var(--another-gray);
 }
-.plan-info-container{
-    width:70%;
-    min-width: 230px;
+.plans-container__card{
+    width:60%;
+    min-width: 190px;
     max-width:300px;
     height: 250px;
     position:relative;
-    margin:50px auto 0;
+    margin:50px 5px 0;
     padding:0 15px;
     background-color: #ffffff;
     border-radius:15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recomended{
+    position:absolute;
+    top:-15px;
+    width:120px;
+    height: 31px;
+    left: calc(50% - 60px);
+    padding:6px;
+    font-size:1.2rem;
+    font-weight: 700;
+    background-color: var(--bitcoin-orange);
+    color:var(--just-white);
+    border-radius:8px;
+}
+.plan-card__title{
+    padding-top:30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color:var(--black);
+    line-height: 1.8rem;
+}
+.plan-card__price{
+    padding:5px 0;
+    font-size:5.2rem;
+    line-height: 6.3rem;
+    font-weight: bold;
+    color:var(--black);
+}
+sup{
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    vertical-align: 25px;
+    font-weight: 300;
+}
+.plan-card__saving{
+    font-size:1.2rem;
+    color:var(--another-gray);
+}
+
+.plan-card__ca{
+    width:150px;
+    height: 48px;
+    margin-top:20px;
+    background-color: var(--off-white);
+    color:var(--black);
+    border:2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family:'DM Sans', sans-serif;
+    line-height: 1.8rem;
+}
+.plan-card__ca span{
+    width:24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("./assets/icons/arrow-right1.svg");
+    vertical-align: text-bottom;
+}
+.plans-container__card{
+    position:relative;
+    scroll-snap-align: center;
+    margin:50px 15px 0;
+    
+}
+
+.plans-container__slider{
+    display:flex;
+    scroll-snap-type:x proximity;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    height: 316px;
+}
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+footer section {
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+}
+.left li{
+    margin:10px 0;
+}
+.left a{
+    color:var(--just-white);
+    text-decoration: none;
 }
