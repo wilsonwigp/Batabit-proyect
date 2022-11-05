@@ -137,12 +137,23 @@ main{
     line-height: 1.6rem;
     color:var(--another-gray);
 }
+
+.main-tables-container{
+    display: flex;
+    scroll-snap-type:x proximity;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    height: 400px;
+}
 .main-currency-table{
+    scroll-snap-align: center;
+    margin:50px 15px 0;
+
     width:70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin:0 auto;
+   
     font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table__title{
@@ -301,6 +312,9 @@ background-position: center;
 .dollar{
     background-image: url("./assets/icons/dollar-sign1.svg");
 }
+.eye{
+    background-image: url("./assets/icons/eye1.svg");
+}
 .product__card-title{
     margin-bottom: 15px;
     font-size: 1.8rem;
@@ -453,7 +467,7 @@ footer{
     height: 150px;
     background-color: var(--bitcoin-orange);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding:30px;
 }
 
